@@ -671,7 +671,7 @@ int lwip_inet_pton(int af, const char *src, void *dst);
 /** @ingroup socket */
 #define close(s)                                  lwip_close(s)
 /** @ingroup socket */
-#define fcntl(s,cmd,val)                          lwip_fcntl(s,cmd,val)
+// USE_CURL_AS_HTTP_CLIENT // #define fcntl(s,cmd,val)                          lwip_fcntl(s,cmd,val)
 /** @ingroup socket */
 #define ioctl(s,cmd,argp)                         lwip_ioctl(s,cmd,argp)
 #endif /* LWIP_POSIX_SOCKETS_IO_NAMES */
